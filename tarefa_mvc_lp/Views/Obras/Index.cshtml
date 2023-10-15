@@ -1,0 +1,66 @@
+﻿@model IEnumerable<tarefa_mvc_lp.Models.Obra>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.descricao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.peao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.peaoMestre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.empreiteira)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.valorHora)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.status)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.descricao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.peao.email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.peaoMestre.email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.empreiteira.cnpj)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.valorHora)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.status)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tarefa_mvc_lp", "tarefa_mvc_lp\tarefa_mvc_lp.csproj", "{CE6FE9FE-7815-4FC5-B83B-94EC2877E0D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE6FE9FE-7815-4FC5-B83B-94EC2877E0D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE6FE9FE-7815-4FC5-B83B-94EC2877E0D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE6FE9FE-7815-4FC5-B83B-94EC2877E0D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE6FE9FE-7815-4FC5-B83B-94EC2877E0D0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AC5AC890-867F-4DDC-96EA-6CCC0CFFB1C8}
+	EndGlobalSection
+EndGlobal
